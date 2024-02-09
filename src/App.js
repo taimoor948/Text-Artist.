@@ -33,12 +33,12 @@ function App() {
       setMode('dark');
       document.body.style.backgroundColor = 'grey';
       showAlert('Dark mode has been enabled', 'success');
-      document.title = "TextArtist - Dark mode";
+      // document.title = "TextArtist - Dark mode";
     } else {
       setMode('light');
       document.body.style.backgroundColor = 'white';
       showAlert('Light mode has been enabled', 'success');
-      document.title = "TextArtist - Light mode";
+      // document.title = "TextArtist - Light mode";
     }
   };
 
@@ -50,7 +50,7 @@ function App() {
         <div className="container my-3">
           <Routes>
             <Route exact path="/about" element={<About />} />
-            <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to examine:" mode={mode} />} />
+            <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Text Artist-Enter the text to examine:" mode={mode} />} />
           </Routes>
         </div>
       </BrowserRouter>
